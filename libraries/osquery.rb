@@ -5,14 +5,14 @@ class OSQuery < Inspec.resource(1)
   name 'osquery'
 
   desc '
-    Check jenkins configuration using the jenkins CLI jar.
+    run osquery via InSpec.
   '
 
-  example '
-    describe osquery("SELECT * FROM users;") do
-      its { should exist }
+  example "
+    describe osquery('SELECT * FROM users;') do
+      its('length') { should_not eq 0 }
     end
-  '
+  "
   attr_reader :params
 
   include ObjectTraverser
