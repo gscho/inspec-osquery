@@ -1,0 +1,10 @@
+name: inspec-osquery
+title: osquery inspec resource
+maintainer: Greg Schofield
+copyright: Greg Schofield
+copyright_email: greg.c.schofield@gmail.com
+license: Apache-2.0
+summary: An InSpec resource for interacting with osquery.
+version: 0.1.0
+supports:
+  - platform-family: unix
